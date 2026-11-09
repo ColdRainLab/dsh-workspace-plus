@@ -1,0 +1,4 @@
+# dsh-workspace-plus 宿主半边：注册 /api/workspace-plus/* 路由，按名称自动建目录并返回路径。
+- insert:
+    - id: dsh-workspace-plus
+      name: dsh-workspace-plus

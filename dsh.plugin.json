@@ -1,0 +1,14 @@
+{
+  "name": "dsh-workspace-plus",
+  "description": "把侧栏工作区的「＋」改成自定义工作区创建框：输入名称即可自动创建同名文件夹并新建工作区。",
+  "version": "0.3.2",
+  "entry": {
+    "name": "dsh-workspace-plus",
+    "inject": [
+      "webServer"
+    ]
+  },
+  "client": {
+    "platform": "web"
+  }
+}
