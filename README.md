@@ -92,6 +92,11 @@
 
 ## 版本记录
 
+**0.3.3**
+
+- 去掉包内硬编码的终末地配色：`html[data-dsh-endfield]` 下的黄色规则改为只引用主题变量（`--ef-y` / `--ef-y-hi` / `--ef-y-20` / `--ef-y-45` / `--ef-y-12` / `--ef-ink-1000`），不再写 `#f2f013`、`#fbfa6a`、`rgba(242,240,19,…)`。
+- 没有安装终末地主题的机器行为不变（这些规则本来就不生效）；装了主题的机器视觉不变（变量值相同）。
+
 **0.3.2**
 
 - 修复「移动会话后打开报历史加载失败」：克隆时复制过来的 `session-log-deepseek/delivery-accepted` 标记仍指向原会话 ID，DSH v4 校验器判定 stored log 损坏（`current-generation delivery marker names the wrong Session`）。现在 `move` 在 `agents.create` 之前把标记的 `data.sessionId` 改写为新会话 ID，其余行按原对象透传、源事件不被修改；不带 `sessionId` 的畸形/未来形态标记保持原样。

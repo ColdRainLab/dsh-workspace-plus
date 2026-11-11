@@ -1,6 +1,6 @@
-{
+﻿{
   "name": "dsh-workspace-plus",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "把侧栏工作区的「＋」改成自定义工作区创建框：输入名称即可自动创建同名文件夹并新建工作区，不再弹出文件夹选择器。",
   "type": "module",
   "license": "MIT",
